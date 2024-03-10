@@ -1,6 +1,6 @@
 ## 1. Relationship between Product and Product_Category Entities
 
-The relationship between the "Product" and "Product_Category" entities is one-to-many. A product can belong to one category, but a category can have many products. This is enforced by the `categoryId` foreign key in the `Product` table, which references the primary key (`_id`) of the `ProductCategory` table. A product can have a null value in the `category_id` column, indicating it's not assigned to any category.
+The relationship between the "Product" and "ProductCategory" entities is one-to-many. A product can belong to one category, but a category can have many products. This is enforced by the `categoryId` foreign key in the `Product` table, which references the primary key (`_id`) of the `ProductCategory` table. A product can have a null value in the `categoryId` column, indicating it's not assigned to any category.
 
 ### 2. Ensuring Valid Category Assignment
 
